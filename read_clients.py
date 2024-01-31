@@ -1,10 +1,13 @@
 def main():
     infile = open('clients.txt', 'r')
-    num = 1
+    clientNo = 0
 
-    for line in infile:
-        print(num, line)
-        num += 1
+    for client in infile:
+        cleintNo += 1
+        client = client.rstrip('\n')
+        print(f"{clientNo}. {client}")
+
+    print(f"Total number of clients: {clientNo}")
         
         
 main() 
