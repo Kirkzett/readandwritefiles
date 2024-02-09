@@ -8,7 +8,7 @@ csv_file = csv.reader(employee)
               
 
 next(csv_file)
-num = 0
+
 #write new lines
 for rec in csv_file:
     salary = int(rec[3])
