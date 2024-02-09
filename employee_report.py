@@ -16,6 +16,7 @@ age_twenty = []
 #skip header
 next(csv_file)
 
+#loop to parse and append lists
 for rec in csv_file:
     #sparce 
     hours = int(rec[4])
@@ -31,13 +32,14 @@ for rec in csv_file:
         low_eff.append(name)
 
     #conditions for appending age lists
-    if age >= 40:      #and age < 50
+    if age >= 40:      
         age_forty.append(name)
-    elif age >= 30:     # and age < 40
+    elif age >= 30:     
         age_thrity.append(name)
-    elif age >= 20:    #and age < 30
+    elif age >= 20:    
         age_twenty.append(name)
-    
+
+#loops to iterate and print newly appended lists    
 print('Highly Efficent Individuals:')   
 for name in high_eff:
     print(name)
